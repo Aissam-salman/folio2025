@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Zen_Tokyo_Zoo, Zen_Kaku_Gothic_New } from "next/font/google";
 import "./globals.css";
+import React from "react";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const zenK = Zen_Kaku_Gothic_New({
+    weight: ['300','400','500', '700', '900'],
+  variable: "--font-zenk",
   subsets: ["latin"],
 });
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const zenT = Zen_Tokyo_Zoo({
+    weight: '400',
+    variable: "--font-zent",
+    subsets: ["latin"]
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${zenK.variable} ${zenT.variable} antialiased`}
       >
         {children}
       </body>
