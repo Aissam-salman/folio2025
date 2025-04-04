@@ -1,5 +1,4 @@
-import Image from "next/image";
-import Link from "next/link";
+import HoverImageEffect from "@/components/ImageRevealHoverEffects";
 
 export default function Home() {
     return (
@@ -8,7 +7,7 @@ export default function Home() {
             <div className="border border-gray-200 rounded-sm h-screen w-full px-10">
                 {/*Navbar*/}
                 <header className={"py-8"}>
-                    <div className="flex z-10 items-center justify-between items-center">
+                    <div className="flex z-10 justify-between items-center">
                         <img src={"/logoaissam.png"} alt="logo" className="h-22 opacity-75 object-cover"/>
                     </div>
                     <h2 className={"text-lg text-foreground font-sans font-normal"}>Software developer</h2>
@@ -18,21 +17,11 @@ export default function Home() {
                     <h1 className={"font-title font-medium text-7xl leading-lg"}>
                         My journey’s just begun. <br/> But I’m ready to build anything.
                     </h1>
-                    <div className={"flex justify-end"}>
-                        <ul>
-                            <li className={" font-medium  leading-lg"}>
-                                <Link href="/">Projet 1</Link>
-                            </li>
-                            <li className={"font-medium  leading-lg"}>
-                                <Link href="/">Projet 1</Link>
-                            </li>
-                            <li className={" font-medium  leading-lg"}>
-                                <Link href="/">Projet 1</Link>
-                            </li>
-                            <li className={" font-medium leading-lg"}>
-                                <Link href="/">Projet 1</Link>
-                            </li>
-                        </ul>
+                    <div className={"flex flex-col items-end gap-6"}>
+                       <HoverImageEffect className={"text-3xl"} text={"Projet 1"} img={"/200104.jpg"} />
+                       <HoverImageEffect className={"text-3xl"} text={"Projet 2"} img={"/200104.jpg"} />
+                       <HoverImageEffect className={"text-3xl"} text={"Projet 3"} img={"/200104.jpg"} />
+                       <HoverImageEffect className={"text-3xl"} text={"Projet 4"} img={"/200104.jpg"} />
                     </div>
                 </main>
             </div>
