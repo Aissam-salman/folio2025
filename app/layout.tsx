@@ -29,7 +29,20 @@ export default function RootLayout({
       <body
         className={`${zenK.variable} ${zenT.variable} antialiased`}
       >
-        {children}
+      <div className="relative h-screen w-full overflow-hidden text-white ">
+          <div className="border border-gray-200 rounded-sm h-screen w-full py-6 px-10">
+              <main>
+                  {children}
+              </main>
+          </div>
+          <div className="absolute -z-10 inset-0 flex justify-center items-center">
+              <img
+                  src="/bg.jpg"
+                  alt="Dojo"
+                  className="absolute w-full h-full bg-no-repeat opacity-20"
+              />
+          </div>
+      </div>
       </body>
     </html>
   );
