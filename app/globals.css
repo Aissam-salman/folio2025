@@ -1,8 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background:#F5F5F5;
+  --foreground: #0A0A0A;
+  --color-color-1: #2D2D2D;
+  --color-color-2: #00A8E8;
+  --color-color-3: #FF6B35;
+
 }
 
 @theme inline {
@@ -10,12 +14,13 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-zenk);
   --font-title: var(--font-zent);
+  --font-noto:var(--font-noto);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background:#0A0A0A;
+    --foreground:#F5F5F5;
   }
 }
 
@@ -70,4 +75,29 @@ body {
 
 .hover-effect-text * {
   display: inline-block;
+}
+
+@keyframes shonen-glare {
+  0% {
+    background-position: -200% 0;
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    background-position: 200% 0;
+    opacity: 0.3;
+  }
+}
+
+.shonen-overlay {
+  background: linear-gradient(
+          45deg,
+          transparent 25%,
+          rgba(255, 26, 26, 0.15) 50%,
+          transparent 75%
+  );
+  background-size: 200% 200%;
+  animation: shonen-glare 10s ease-in-out infinite;
 }
