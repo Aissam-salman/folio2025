@@ -63,7 +63,7 @@ export default function HoverImageEffect({ text, img, className, link }: { text:
             }
 
             reveal.style.top = `${mousePos.y - rect.height - 20 - docScrolls.top}px`
-            reveal.style.left = `${mousePos.x - rect.width - 20 - docScrolls.left}px`
+            reveal.style.left = `${mousePos.x - rect.width - 100 - docScrolls.left}px`
         }
 
         const animateLetters = () => {
