@@ -1,9 +1,9 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
-import {charming} from '@/lib/charming'
+import {charming} from '../lib/charming'
 import gsap from 'gsap'
-import {cn} from "@/lib/utils";
+import {cn} from "../lib/utils";
 
 const getMousePos = (e: MouseEvent | TouchEvent) => {
     let posx = 0
@@ -45,6 +45,7 @@ export default function HoverImageEffect({ text, img, className, link }: { text:
             reveal.appendChild(div)
         }
 
+        // @ts-ignore
         const revealImgs = [...reveal.querySelectorAll('.hover-reveal__img')]
         const rect = reveal.getBoundingClientRect()
 
@@ -53,6 +54,7 @@ export default function HoverImageEffect({ text, img, className, link }: { text:
             split: (text) => text.split(''),
             setClassName: (i, char) => `letter-${i}`,
         })
+        // @ts-ignore
         const letters = [...textEl.querySelectorAll('span')]
 
         const positionElement = (ev: MouseEvent | TouchEvent) => {

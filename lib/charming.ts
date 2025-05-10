@@ -44,6 +44,7 @@ export function charming(
         if (node.nodeType === Node.TEXT_NODE) {
             inject(node as Text)
         } else {
+            // @ts-ignore
             const children = Array.from(node.childNodes)
             if (
                 children.length === 1 &&
