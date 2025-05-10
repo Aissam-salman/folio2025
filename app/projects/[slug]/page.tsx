@@ -43,11 +43,11 @@ export default function ProjectDetail({
           <Image
             src={project.cover}
             alt={project.title}
-            className={`${
-              project.techno.includes('Flutterflow')
-                ? 'w-52 rounded-sm mb-12'
-                : 'w-7xl rounded-sm mb-12'
-                }`}
+            className={
+                project.techno.includes('Flutterflow')
+                  ? 'w-52 rounded-sm mb-12'
+                  : 'max-w-7xl w-full rounded-sm mb-12'
+              }
             width={1980}
             height={1080}
           />
@@ -143,11 +143,11 @@ export default function ProjectDetail({
                       width={1980}
                   height={1080}
                 alt={`Illustration ${index + 1}`}
-                className={`${
+                className={
                     project.techno.includes('Flutterflow')
                       ? 'w-52 rounded-sm mb-12'
-                      : 'w-7xl rounded-sm mb-12'
-                  }`}
+                      : 'max-w-7xl w-full rounded-sm mb-12'
+                  }
               />
             </div>
           ))}

@@ -87,7 +87,7 @@ export default function RootLayout({
           </div>
 
           <div className="absolute shonen-overlay inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.8)_0%,transparent_50%,rgba(0,0,0,0.8)_100%)]">
-            <div className="absolute inset-0 opacity-20 bg-[length:40px_40px] bg-repeat bg-[linear-gradient(45deg,transparent_49%,#FF1A1A_50%,transparent_51%)]"></div>
+            <div className="absolute inset-0 opacity-20 bg-size-[40px_40px] bg-repeat bg-[linear-gradient(45deg,transparent_49%,#FF1A1A_50%,transparent_51%)]"></div>
 
             <div
               className="absolute inset-0 opacity-10 mix-blend-overlay

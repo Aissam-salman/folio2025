@@ -46,7 +46,7 @@ export default function Home() {
           />
         </div>
       </main>
-      <footer className="fixed bottom-0 left-0 right-0 px-12 py-8 bg-gradient-to-t from-black/10 to-transparent backdrop-blur-xs">
+      <footer className="fixed bottom-0 left-0 right-0 px-12 py-8 bg-linear-to-t from-black/10 to-transparent backdrop-blur-xs">
         <div className="flex flex-row items-center justify-center gap-8 relative">
           <div className="flex gap-4">
             <a href="mailto:aissam.Lamjadab@gmail.com">
