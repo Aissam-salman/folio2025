@@ -35,14 +35,15 @@ export default function Home() {
           </h3>
           <HoverImageEffect
             link="/projects/minkey-app"
-            className="text-3xl font-kaori text-stone-200"
-            text="Minkey.fr"
-            img="/projects/minkey/1.png"
+            className="text-3xl font-zenk text-stone-200"
+            text="Application mobile EdSass"
+            img="/projects/app-mobile/home_page.png"
           />
           <HoverImageEffect
-            className="text-3xl font-zenk text-stone-200"
-            text="Application EdSass"
-            img="/200104.jpg"
+            link="/projects/minkey-site"
+            className="text-3xl font-kaori text-stone-200"
+            text="minkey.fr"
+            img="/projects/minkey/1.png"
           />
         </div>
       </main>

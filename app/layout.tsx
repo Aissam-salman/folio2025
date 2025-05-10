@@ -44,9 +44,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={` ${Noto.variable} ${myFont.variable} ${kaori.variable} ${kaoriBold.variable} antialiased`}>
-        <div className="relative h-screen w-full overflow-hidden text-white bg-black">
+        <div className="relative min-h-screen w-full overflow-auto text-white bg-black">
           {/* Contenu principal avec bordure stylisée */}
-          <div className="h-screen w-full py-6 px-4 sm:px-10 relative">
+          <div className="min-h-screen w-full py-6 px-4 sm:px-10 relative">
             {/* Bordure manga animée (utilisation de arbitrary values) */}
             <div
               className="absolute inset-0 border-2 border-red-500/30 rounded-lg
@@ -60,7 +60,7 @@ export default function RootLayout({
                 />
               </div>
             </div>
-            <main className="h-full relative z-20">{children}</main>
+            <main className="relative z-20">{children}</main>
 
             {/* Décorations manga avec police arbitraire */}
             <div
