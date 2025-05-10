@@ -33,7 +33,7 @@ const kaoriBold = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Aissam Lamjadab 🚀",
+  title: "PorteFolio 🚀",
   description: "My personal folio",
 };
 

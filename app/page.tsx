@@ -24,7 +24,7 @@ export default function Home() {
         <div className={"text-[#00A8E8]/80 mb-12 w-1/3 text-xl"}>
           J&#39;aide les entrepreneurs à transformer leurs idées en applications web
           sur mesure, en combinant un back-end robuste et un front-end fluide,
-          avec une vraie attention à l'UX et aux besoins du terrain.
+          avec une vraie attention à l&#39;UX et aux besoins du terrain.
         </div>
       </header>
       <main className="flex flex-col gap-16 py-16 px-4">

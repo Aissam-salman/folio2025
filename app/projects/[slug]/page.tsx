@@ -9,11 +9,13 @@ export default function ProjectDetail({
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  const resolvedParams = use(params);
+    const resolvedParams = use(params);
+    const router = useRouter();
+
   const project = projects.find((p) => p.slug === resolvedParams.slug);
   if (!project) return notFound();
 
-  const router = useRouter();
+
   return (
     <div className="py-8">
       <header className="flex text-stone-200">
@@ -105,7 +107,7 @@ export default function ProjectDetail({
         <div className="grid grid-cols-3 gap-6 mb-16">
           <section className="backdrop-blur-md bg-white/10 p-8 rounded-sm border border-white/20 transform hover:scale-[1.02] transition-transform">
             <h2 className="text-2xl font-semibold mb-4 text-white">
-              J'aide qui ?
+                J&#39;aide qui ?
             </h2>
             <p className="text-gray-200 leading-relaxed">
               {project.sections.who}
