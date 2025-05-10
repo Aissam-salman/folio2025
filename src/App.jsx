@@ -1,4 +1,4 @@
-import HoverImageEffect from "../components/ImageRevealHoverEffects.js";
+import HoverImageEffect from "./components/ImageRevealHoverEffects.js";
 function App() {
     return (
         <>
