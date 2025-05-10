@@ -1,5 +1,6 @@
 "use client";
 import { projects } from "@/lib/projects";
+import Image from "next/image.js";
 import { notFound, useRouter } from "next/navigation";
 import { use } from "react";
 
@@ -37,14 +38,16 @@ export default function ProjectDetail({
       <div className="max-w-6xl mx-auto px-4">
         {/* Image de couverture */}
         <div className="flex justify-center">
-          <img
+          <Image
             src={project.cover}
             alt={project.title}
             className={`${
               project.techno.includes('Flutterflow')
                 ? 'w-52 rounded-sm mb-12'
                 : 'w-7xl rounded-sm mb-12'
-            }`}
+                }`}
+            width={1980}
+            height={1080}
           />
         </div>
 
@@ -132,9 +135,11 @@ export default function ProjectDetail({
         <div className="grid grid-cols-2 gap-8">
           {project.illustration.map((img, index) => (
             <div  key={index} className="flex justify-center">
-              <img
+              <Image
                 key={index}
-                src={img}
+                      src={img}
+                      width={1980}
+                  height={1080}
                 alt={`Illustration ${index + 1}`}
                 className={`${
                     project.techno.includes('Flutterflow')

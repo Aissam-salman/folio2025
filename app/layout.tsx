@@ -3,6 +3,7 @@ import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 import React from "react";
 import localFont from "next/font/local";
+import Image from "next/image.js";
 
 const Noto = Noto_Sans_JP({
   weight: ["400", "700"],
@@ -43,7 +44,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` ${Noto.variable} ${myFont.variable} ${kaori.variable} ${kaoriBold.variable} antialiased`}>
+      <head>
+        <link rel="icon" type="image/ico" href="/favicon/favicon.ico" />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
+      </head>
+      <body
+        className={` ${Noto.variable} ${myFont.variable} ${kaori.variable} ${kaoriBold.variable} antialiased`}
+      >
         <div className="relative min-h-screen w-full overflow-auto text-white bg-black">
           {/* Contenu principal avec bordure stylisée */}
           <div className="min-h-screen w-full py-6 px-4 sm:px-10 relative">
@@ -53,7 +60,9 @@ export default function RootLayout({
                                 shadow-[0_0_30px_#FF1A1A30] shonen-overlay"
             >
               <div className="absolute inset-0">
-                <img
+                <Image
+                  width={1980}
+                  height={1080}
                   src="/background.jpg"
                   alt="Photo by ayumi kubo"
                   className="w-full h-full object-cover opacity-25 grayscale contrast-150 blur-[1px]"
