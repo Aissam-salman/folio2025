@@ -12,9 +12,9 @@ export const projects = [
         content: 'Voir l\'application',
         sections: {
 
-            who: 'Une startup qui accompagne les entrepreneurs dans leur lancement',
-            why: 'Developper leur application mobile dans l\'education entreprenariale',
-            how: 'Conception, developpement et deploiement de l\'application'
+            who: 'Une startup qui accompagne les entrepreneurs dans leur lancement.',
+            why: 'Developper leur application mobile dans l\'education entreprenariale.',
+            how: 'Conception, developpement et deploiement de l\'application.'
         }
     },
     {
@@ -29,9 +29,9 @@ export const projects = [
         illustration: ['/projects/minkey/2.png', '/projects/minkey/3.png'],
         content: 'visit minkey.fr',
         sections: {
-            who: 'Une startup qui accompagne les entrepreneurs dans leur lancement',
-            why: 'Moderniser le site web et améliorer les performances pour offrir une meilleure expérience aux entrepreneurs',
-            how: 'Redesign complet sur Figma, intégration avec Elementor, création d\'un thème personnalisé avec blog, et optimisation des performances en nettoyant les plugins inutiles'
+            who: 'Une startup qui accompagne les entrepreneurs dans leur lancement.',
+            why: 'Moderniser le site web et améliorer les performances pour offrir une meilleure expérience aux entrepreneurs.',
+            how: 'Redesign complet sur Figma, intégration avec Elementor, création d\'un thème personnalisé avec blog, et optimisation des performances en nettoyant les plugins inutiles.'
         }
     }
 ]
