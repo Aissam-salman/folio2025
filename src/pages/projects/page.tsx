@@ -5,7 +5,7 @@ import HoverImageEffect from "../../components/ImageRevealHoverEffects";
 
 export default function ProjectDetail() {
     const resolvedParams = useLoaderData();
-    const router = useNavigate();
+    const navigate = useNavigate();
 
     // @ts-ignore
     const project = projects.find((p) => p.slug === resolvedParams.slug);
@@ -29,7 +29,7 @@ export default function ProjectDetail() {
                 <main className="relative z-20">
                             <div className="py-8">
                                 <header className="flex text-stone-200">
-                                    <button className="cursor-pointer" onClick={() => router(-1)}>
+                                    <button className="cursor-pointer" onClick={() => navigate(-1)}>
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             width="24"
