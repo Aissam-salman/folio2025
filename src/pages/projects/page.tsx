@@ -115,7 +115,7 @@ export default function ProjectDetail() {
                                     </div>
 
                                     {/* Cartes en glassmorph */}
-                                    <div className="grid grid-cols-3 gap-6 mb-16">
+                                    <div className="flex flex-col lg:grid lg:grid-cols-3 gap-6 mb-16">
                                         <section
                                             className="backdrop-blur-md bg-white/10 p-8 rounded-sm border border-white/20 transform hover:scale-[1.02] transition-transform">
                                             <h2 className="text-2xl font-semibold mb-4 text-white">
